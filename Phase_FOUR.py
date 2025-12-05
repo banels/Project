@@ -31,8 +31,8 @@ TopRevenue24 = merged24.sort_values("seg_revenue_usd",ascending=False).head(10)
 
 
 #Line chart passenger evolution
-date_grouped_24 = merged24.groupby(["year","month"])
-mt.plot(x=date_grouped_24['month'],y=date_grouped_24['seg_passengers'])
+date_grouped_24 = merged24.groupby(["month"])
+mt.plot(date_grouped_24['month'],date_grouped_24['seg_passengers'])
 mt.show()        
 
 
