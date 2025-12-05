@@ -14,17 +14,17 @@ print(cwd)
 
 #Evolution of Passengers (difference of total passengers between 2024 and 2023)
 
-# print(sum(seg24["seg_passengers"])-sum(seg23["seg_passengers"]))
-# print(sum(seg24["seg_passengers"]))
-# print(sum(seg23["seg_passengers"]))
+print(sum(seg24["seg_passengers"])-sum(seg23["seg_passengers"]))
+print(sum(seg24["seg_passengers"]))
+print(sum(seg23["seg_passengers"]))
 
 
 #Identify most profitable origins/destinations in 2024
 
-# seg24.sort_values("seg_revenue_usd",ascending=False,inplace=True)
-# print(seg24["seg_revenue_usd"].head(10)) #values
-# print(seg24["leg_origin"].head(10)) #origins
-# print(seg24["leg_destination"].head(10)) #destinations
+seg24.sort_values("seg_revenue_usd",ascending=False,inplace=True)
+print(seg24["seg_revenue_usd"].head(10)) #values
+print(seg24["leg_origin"].head(10)) #origins
+print(seg24["leg_destination"].head(10)) #destinations
 
 
 
